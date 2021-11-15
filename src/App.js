@@ -6,7 +6,12 @@ import {circles} from './circles'
 
 class App extends Component {
   state={
-    score:0,
+    score: 0 ,
+  }
+  clickHandler = () =>{
+    this.setState({
+      score:this.state.score + 10,
+    })
   }
   render() {
 
@@ -16,7 +21,11 @@ class App extends Component {
         <p>Your game score is: {this.state.score}</p>
         <div className="circles">
           {circles.map((c) => (
-            <Circle key={c.id} color={c.color} id={c.id}/> 
+            <Circle 
+            key={c.id} 
+            color={c.color} 
+            id={c.id} 
+            click={this.clickHandler}/> 
           ))}
         </div>
         <div className="button">

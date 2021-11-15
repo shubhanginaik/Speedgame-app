@@ -50,18 +50,7 @@ button{
   margin: 20px;
   font-family: 'Special Elite', cursive;
 }
-.green{
-  background-color: greenyellow;
-}
-.blue{
-  background-color: blue;
-}
-.yellow{
-  background-color: yellow;
-}
-.red{
-  background-color: red;
-}
+
 .circle p{
   font-size: 2rem;
 }
