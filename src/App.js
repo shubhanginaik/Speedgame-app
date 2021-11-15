@@ -4,15 +4,42 @@ import './App.css'
 import Circle from './Circle';
 import {circles} from './circles'
 
+const getRndInteger = (min, max) =>{
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
 class App extends Component {
   state={
     score: 0 ,
+    current:0,
   }
+  timer = undefined;
+  pace = 1500;
+
   clickHandler = () =>{
     this.setState({
       score:this.state.score + 10,
     })
   }
+
+  nextcicle = () =>{
+    let nextActive;
+    do{
+      nextActive = getRndInteger(1,4)
+    }while(nextActive === this.state.current)
+    this.setState({
+      current : nextActive,
+    });
+    this.pace *= 0.95
+    this.timer = setTimeout(this.nextcicle, this.pace);
+    console.log("active circle is : ", this.state.current)
+  }
+  startHandler = () =>{
+    this.nextcicle();
+  }
+  stopHandler = () =>{
+    clearTimeout(this.timer);
+  };
   render() {
 
     return (
@@ -29,8 +56,8 @@ class App extends Component {
           ))}
         </div>
         <div className="button">
-        <button className="start">Start</button>
-        <button className="stop">Stop</button>
+        <button className="start" onClick={this.startHandler}>Start</button>
+        <button className="stop" onClick={this.stopHandler}>Stop</button>
         </div>
     </div>
       
