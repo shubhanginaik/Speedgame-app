@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,3 +15,53 @@ code {
 /* App-header h1{
 
 } */
+body{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  font-family: 'Special Elite', cursive;
+}
+h1{
+  margin: 50px;
+}
+.circles{
+  display: flex;
+  flex-wrap: wrap;
+}
+.circle{
+width:200px;
+height: 200px;
+/* border: 1px solid gray; */
+background-color: rgb(160, 211, 160);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 20px;
+
+}
+button{
+  width:150px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin: 20px;
+  font-family: 'Special Elite', cursive;
+}
+.green{
+  background-color: greenyellow;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+.circle p{
+  font-size: 2rem;
+}
