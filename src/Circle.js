@@ -5,8 +5,9 @@ const Circle = (props) => {
         // <div className={`circle ${props.color}`}><p>{props.id} </p>
         <div 
         style={{backgroundColor:props.color}} 
-        className="circle" 
-        onClick={props.click}><p>{props.id}  </p>
+        className={` circle ${props.active? "active" : ""}`} 
+        onClick={props.click}><p>{props.id} 
+         </p>
         </div>
     );
 };

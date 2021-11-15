@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css'
 import Circle from './Circle';
 import {circles} from './circles'
+import GameOver from './GameOver';
 
 const getRndInteger = (min, max) =>{
   return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -12,6 +13,7 @@ class App extends Component {
   state={
     score: 0 ,
     current:0,
+    gameOver:false,
   }
   timer = undefined;
   pace = 1500;
@@ -39,6 +41,9 @@ class App extends Component {
   }
   stopHandler = () =>{
     clearTimeout(this.timer);
+    this.setState({
+      gameOver:true,
+    })
   };
   render() {
 
@@ -52,12 +57,14 @@ class App extends Component {
             key={c.id} 
             color={c.color} 
             id={c.id} 
-            click={this.clickHandler}/> 
+            click={this.clickHandler}
+            active= {this.state.current === c.id}/> 
           ))}
         </div>
         <div className="button">
         <button className="start" onClick={this.startHandler}>Start</button>
         <button className="stop" onClick={this.stopHandler}>Stop</button>
+        {this.state.gameOver && <GameOver score={this.state.score} />}
         </div>
     </div>
       
