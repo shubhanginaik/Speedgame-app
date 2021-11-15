@@ -32,7 +32,7 @@ class App extends Component {
     this.setState({
       current : nextActive,
     });
-    this.pace *= 0.95
+    this.pace *= 0.75
     this.timer = setTimeout(this.nextcicle, this.pace);
     console.log("active circle is : ", this.state.current)
   }
@@ -50,7 +50,7 @@ class App extends Component {
     return (
         <div className="App">
         <h1>Speedgame</h1>
-        <p>Your game score is: {this.state.score}</p>
+        <p>Your game score is : {this.state.score}</p>
         <div className="circles">
           {circles.map((c) => (
             <Circle 
@@ -62,8 +62,8 @@ class App extends Component {
           ))}
         </div>
         <div className="button">
-        <button className="start" onClick={this.startHandler}>Start</button>
-        <button className="stop" onClick={this.stopHandler}>Stop</button>
+        <button className="start" onClick={this.startHandler}><span>Start</span></button>
+        <button className="stop" onClick={this.stopHandler}><span>Stop</span></button>
         {this.state.gameOver && <GameOver score={this.state.score} />}
         </div>
     </div>

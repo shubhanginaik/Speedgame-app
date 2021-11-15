@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -24,8 +18,12 @@ body{
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
   font-family: 'Special Elite', cursive;
 }
-h1{
+.App h1{
   margin: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  color:indigo;
+  text-shadow: 1px 1px 5px rgb(255, 0, 191);
 }
 .circles{
   display: flex;
@@ -34,22 +32,32 @@ h1{
 .circle{
 width:200px;
 height: 200px;
-/* border: 1px solid gray; */
 background-color: rgb(160, 211, 160);
 border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
 margin: 20px;
-
 }
-button{
+.App p{
+  font-size: 1.2rem;
+}
+.start,.stop{
   width:150px;
   height: 50px;
   border-radius: 5px;
   margin-right: 20px;
   margin: 20px;
   font-family: 'Special Elite', cursive;
+}
+.App .button :hover{
+  color: rgb(47, 130, 255);
+}
+.start span{
+  font-size: 1.2rem;
+}
+.stop span{
+  font-size: 1.2rem;
 }
 
 .circle p{
@@ -69,23 +77,42 @@ button{
   justify-content: center;
   width:100%;
   height: 100%;
-  background-color: rgba(34, 33, 33,.6);
+  background-color: rgba(34, 33, 33,.8);
   border-radius: 5px;
 }
 .popup{
   position: relative;
   left:0;
   top:0;
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 40%;
   background-color: rgb(240, 221, 221);
   padding: 2rem;
   box-shadow: 0 0 5px #333;
   margin: 0 auto;
+  border-radius: 5px;
+}
+.popup h2{
+  font-family: 'Courier Prime', monospace;
+  font-size: 2.2rem;
+  color: #3f87a6;
 }
 .overlay button{
+  display: block;
   width: 50px;
   height: 30px;
   margin-top: 2px;
-  margin-left: 300px;
+  margin-left: 93%;
+}
+.overlay button:hover{
+  background-color: rgb(224, 131, 77);
+}
+
+.popup button span{
+  font-size: 1.5rem;
+}
+
+.popup p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
 }
