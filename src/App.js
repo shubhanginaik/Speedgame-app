@@ -14,37 +14,53 @@ class App extends Component {
     score: 0 ,
     current:0,
     gameOver:false,
+    pace: 1500,
   }
   timer = undefined;
-  pace = 1500;
+  
 
-  clickHandler = () =>{
+  clickHandler = (id) =>{
+    console.log(id);
+    if(this.state.current !== id){
+      this.stopHandler();
+      return;
+    }
     this.setState({
       score:this.state.score + 10,
     })
   }
 
-  nextcicle = () =>{
+  nextcircle = () =>{
     let nextActive;
     do{
       nextActive = getRndInteger(1,4)
     }while(nextActive === this.state.current)
     this.setState({
       current : nextActive,
+      pace:this.state.pace * 0.95,
     });
-    this.pace *= 0.75
-    this.timer = setTimeout(this.nextcicle, this.pace);
+    
+    this.timer = setTimeout(this.nextcircle, this.state.pace);
     console.log("active circle is : ", this.state.current)
   }
   startHandler = () =>{
-    this.nextcicle();
+    this.nextcircle();
   }
   stopHandler = () =>{
     clearTimeout(this.timer);
     this.setState({
       gameOver:true,
+      current:0,
+      pace: 1500,
     })
   };
+  closeHandler = () =>{
+    this.setState({
+      gameOver:false,
+      score: 0,
+      pace: 1500,
+    })
+  }
   render() {
 
     return (
@@ -57,14 +73,14 @@ class App extends Component {
             key={c.id} 
             color={c.color} 
             id={c.id} 
-            click={this.clickHandler}
+            click={() =>this.clickHandler(c.id)}
             active= {this.state.current === c.id}/> 
           ))}
         </div>
         <div className="button">
         <button className="start" onClick={this.startHandler}><span>Start</span></button>
         <button className="stop" onClick={this.stopHandler}><span>Stop</span></button>
-        {this.state.gameOver && <GameOver score={this.state.score} />}
+        {this.state.gameOver && <GameOver score={this.state.score} close={this.closeHandler} />}
         </div>
     </div>
       
