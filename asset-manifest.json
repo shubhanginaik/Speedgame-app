@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/shubhanginaik/Speedgame-app/static/css/main.25558b62.chunk.css",
-    "main.js": "/shubhanginaik/Speedgame-app/static/js/main.8305bac8.chunk.js",
-    "main.js.map": "/shubhanginaik/Speedgame-app/static/js/main.8305bac8.chunk.js.map",
-    "runtime-main.js": "/shubhanginaik/Speedgame-app/static/js/runtime-main.578317e1.js",
-    "runtime-main.js.map": "/shubhanginaik/Speedgame-app/static/js/runtime-main.578317e1.js.map",
-    "static/js/2.1966c927.chunk.js": "/shubhanginaik/Speedgame-app/static/js/2.1966c927.chunk.js",
-    "static/js/2.1966c927.chunk.js.map": "/shubhanginaik/Speedgame-app/static/js/2.1966c927.chunk.js.map",
-    "index.html": "/shubhanginaik/Speedgame-app/index.html",
-    "static/css/main.25558b62.chunk.css.map": "/shubhanginaik/Speedgame-app/static/css/main.25558b62.chunk.css.map",
-    "static/js/2.1966c927.chunk.js.LICENSE.txt": "/shubhanginaik/Speedgame-app/static/js/2.1966c927.chunk.js.LICENSE.txt",
-    "static/media/clickSound.d96a74a4.wav": "/shubhanginaik/Speedgame-app/static/media/clickSound.d96a74a4.wav",
-    "static/media/index.css": "/shubhanginaik/Speedgame-app/static/media/snowflake.b4524b59.svg"
+    "main.css": "//Speedgame-app/static/css/main.f9bcb8ac.chunk.css",
+    "main.js": "//Speedgame-app/static/js/main.8305bac8.chunk.js",
+    "main.js.map": "//Speedgame-app/static/js/main.8305bac8.chunk.js.map",
+    "runtime-main.js": "//Speedgame-app/static/js/runtime-main.d65d94f1.js",
+    "runtime-main.js.map": "//Speedgame-app/static/js/runtime-main.d65d94f1.js.map",
+    "static/js/2.1966c927.chunk.js": "//Speedgame-app/static/js/2.1966c927.chunk.js",
+    "static/js/2.1966c927.chunk.js.map": "//Speedgame-app/static/js/2.1966c927.chunk.js.map",
+    "index.html": "//Speedgame-app/index.html",
+    "static/css/main.f9bcb8ac.chunk.css.map": "//Speedgame-app/static/css/main.f9bcb8ac.chunk.css.map",
+    "static/js/2.1966c927.chunk.js.LICENSE.txt": "//Speedgame-app/static/js/2.1966c927.chunk.js.LICENSE.txt",
+    "static/media/clickSound.d96a74a4.wav": "//Speedgame-app/static/media/clickSound.d96a74a4.wav",
+    "static/media/index.css": "//Speedgame-app/static/media/snowflake.b4524b59.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.578317e1.js",
+    "static/js/runtime-main.d65d94f1.js",
     "static/js/2.1966c927.chunk.js",
-    "static/css/main.25558b62.chunk.css",
+    "static/css/main.f9bcb8ac.chunk.css",
     "static/js/main.8305bac8.chunk.js"
   ]
 }
