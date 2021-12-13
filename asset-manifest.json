@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/speedgame/static/css/main.57d9ecda.chunk.css",
-    "main.js": "/speedgame/static/js/main.a0f253fe.chunk.js",
-    "main.js.map": "/speedgame/static/js/main.a0f253fe.chunk.js.map",
-    "runtime-main.js": "/speedgame/static/js/runtime-main.dd1424f7.js",
-    "runtime-main.js.map": "/speedgame/static/js/runtime-main.dd1424f7.js.map",
-    "static/js/2.c8415602.chunk.js": "/speedgame/static/js/2.c8415602.chunk.js",
-    "static/js/2.c8415602.chunk.js.map": "/speedgame/static/js/2.c8415602.chunk.js.map",
-    "index.html": "/speedgame/index.html",
-    "static/css/main.57d9ecda.chunk.css.map": "/speedgame/static/css/main.57d9ecda.chunk.css.map",
-    "static/js/2.c8415602.chunk.js.LICENSE.txt": "/speedgame/static/js/2.c8415602.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/speedgame/static/media/snowflake.b4524b59.svg"
+    "main.css": "/shubhanginaik/Speedgame-app/static/css/main.25558b62.chunk.css",
+    "main.js": "/shubhanginaik/Speedgame-app/static/js/main.24bec1da.chunk.js",
+    "main.js.map": "/shubhanginaik/Speedgame-app/static/js/main.24bec1da.chunk.js.map",
+    "runtime-main.js": "/shubhanginaik/Speedgame-app/static/js/runtime-main.826e5480.js",
+    "runtime-main.js.map": "/shubhanginaik/Speedgame-app/static/js/runtime-main.826e5480.js.map",
+    "static/js/2.844a240a.chunk.js": "/shubhanginaik/Speedgame-app/static/js/2.844a240a.chunk.js",
+    "static/js/2.844a240a.chunk.js.map": "/shubhanginaik/Speedgame-app/static/js/2.844a240a.chunk.js.map",
+    "index.html": "/shubhanginaik/Speedgame-app/index.html",
+    "static/css/main.25558b62.chunk.css.map": "/shubhanginaik/Speedgame-app/static/css/main.25558b62.chunk.css.map",
+    "static/js/2.844a240a.chunk.js.LICENSE.txt": "/shubhanginaik/Speedgame-app/static/js/2.844a240a.chunk.js.LICENSE.txt",
+    "static/media/clickSound.d96a74a4.wav": "/shubhanginaik/Speedgame-app/static/media/clickSound.d96a74a4.wav",
+    "static/media/index.css": "/shubhanginaik/Speedgame-app/static/media/snowflake.b4524b59.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd1424f7.js",
-    "static/js/2.c8415602.chunk.js",
-    "static/css/main.57d9ecda.chunk.css",
-    "static/js/main.a0f253fe.chunk.js"
+    "static/js/runtime-main.826e5480.js",
+    "static/js/2.844a240a.chunk.js",
+    "static/css/main.25558b62.chunk.css",
+    "static/js/main.24bec1da.chunk.js"
   ]
 }
