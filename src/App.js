@@ -4,9 +4,9 @@ import './App.css'
 import Circle from './Circle';
 import {circles} from './circles'
 import GameOver from './GameOver';
-// import endSound from "./assets/"
+import endSound from "./assets/sounds/clickSound.wav"
 
-// let gameEndsound = new Audio(endSound);
+ let clickSound = new Audio(endSound);
 
 
 const getRndInteger = (min, max) =>{
@@ -23,11 +23,21 @@ class App extends Component {
     gameStart: false,
     gameStop: true,
   }
+  
   timer = undefined;
+
+  clickPlay = () =>{
+    if(clickSound.paused){
+      clickSound.play();
+    } else {
+      clickSound.currentTime = 0;
+    }
+  }
   
 
   clickHandler = (id) =>{
-    console.log(id);
+    this.clickPlay();
+    console.log("tou have clicked",id)
     
     if(this.state.current !== id){
       this.stopHandler();
