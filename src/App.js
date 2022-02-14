@@ -37,7 +37,7 @@ class App extends Component {
 
   clickHandler = (id) =>{
     this.clickPlay();
-    console.log("tou have clicked",id)
+    //console.log("you have clicked",id)
     
     if(this.state.current !== id){
       this.stopHandler();
